@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int a,b,r;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    if (a>0 && b>0)
+    {
+        r= a - (a/b)*b;
+        printf("%d",r);
+        break;
+    }
+    else if(a<0)
+    {
+        r = -1;
+        printf("%d",r);
+        break;
+    }
+    else if(b == 0)
+    {
+        printf("INVALID OPERATION");
+        break;
+    }
+    else
+    {
+        r = -1;
+        printf("%d",r);
+        break;
+    }
+ 
+    return 0;
+}
